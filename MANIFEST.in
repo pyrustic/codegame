@@ -1,0 +1,3 @@
+recursive-include codegame *
+global-exclude *.py[cod]
+include VERSION
