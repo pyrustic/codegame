@@ -225,6 +225,38 @@ Then copy-paste in the search bar the GitHub repository URL (or the shortcut "ow
     </p>
 </div>
 
+<br>
+
+<div align="center">
+    <img src="https://raw.githubusercontent.com/pyrustic/misc/master/media/codegame-installer.png" alt="Figure" width="658">
+    <p align="center">
+    <i> Installing the codegame demo </i>
+    </p>
+</div>
+
+
+
+<br>
+
+<div align="center">
+    <img src="https://raw.githubusercontent.com/pyrustic/misc/master/media/codegame-solving.png" alt="Figure" width="661">
+    <p align="center">
+    <i> Solving the Level 1 of the codegame demo </i>
+    </p>
+</div>
+
+
+<br>
+
+<div align="center">
+    <img src="https://raw.githubusercontent.com/pyrustic/misc/master/media/codegame-solved.png" alt="Figure" width="674">
+    <p align="center">
+    <i> Solved Level 1 of the codegame demo </i>
+    </p>
+</div>
+
+
+
 The GUI of the `Codegame Platform` is inspired by `Hubstore`. Visit [Hubstore](https://github.com/pyrustic/hubstore) !
 
 
