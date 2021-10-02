@@ -11,7 +11,6 @@ The creator can safely insert problems testing specifications in a level. The Co
 
 This project is suitable for:
 - teaching programming, algorithms, data structures;
-- teaching ethical hacking;
 - building a well-articulated chain of puzzles with an exciting story behind it;
 - automating [coding interviews](https://en.wikipedia.org/wiki/Coding_interview);
 - fun, and more...
