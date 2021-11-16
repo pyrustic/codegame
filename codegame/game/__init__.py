@@ -47,11 +47,18 @@ class Game(Viewable):
         with open(self._filename, "r") as file:
             data = file.read()
         tokens = litemark.scan(data)
+        tokens = list(tokens)
         tests = self._extract_tests(tokens)
         self._tests = self._formalize_tests(tests)
         self._viewer = litemark.Viewer(self._scrolledtext, root=self._target,
-                                 style=litemark.get_default_style())
-        self._viewer.render(tokens, ignore="codegame-test")
+                                 style=litemark.get_light_style())
+        cache = []
+        for token in tokens:
+            if token.name == litemark.Element.CODEBLOCK:
+                if token.data[0] == "codegame-test":
+                    continue
+            cache.append(token)
+        self._viewer.render(cache)
         self._add_button_solve_me()
         self._viewer.readonly = True
         self._solved = False

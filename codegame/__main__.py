@@ -1,5 +1,5 @@
 import sys
-from pyrustic.app import App
+from tkf import App
 from codegame.misc.theme import get_theme
 from codegame.view.base import Base
 from codegame import cli

@@ -1,6 +1,6 @@
 import tkinter as tk
 from viewable import Viewable
-from megawidget.scrollbox import Scrollbox
+from megawidget.scrollbox import ScrollBox
 from megawidget.toast import Toast
 from codegame.misc.theme import get_highlight_style, get_unhighlight_style
 from suggestion import Suggestion, Engine
@@ -83,7 +83,7 @@ class Home(Viewable):
         about_button.pack(side=tk.RIGHT, padx=(2, 0))
 
     def _install_pane(self):
-        self._scrollbox = Scrollbox(self._body)
+        self._scrollbox = ScrollBox(self._body)
         self._scrollbox.pack(expand=1, fill=tk.BOTH)
         self._frame_matrix = tk.Frame(self._scrollbox.box)
         self._frame_matrix.pack(fill=tk.BOTH, expand=1)

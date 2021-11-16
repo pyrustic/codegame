@@ -23,7 +23,7 @@ def get_theme():
 
 
 def get_button_style():
-    style = button.get_button_style_2()
+    style = button.get_button_dark_filled_style()
     style.foreground = "gray"
     style.padX = 5
     style.padY = 0
@@ -36,6 +36,7 @@ def get_button_style():
 def get_entry_style():
     style = entry.get_style()
     style.font = "Liberation Mono", 11, "normal"
+    style.highlightThickness = 0
     return style
 
 
@@ -103,7 +104,7 @@ def get_entry_level_style():
 
 
 def get_button_lite_style():
-    style = button.get_button_style_2()
+    style = button.get_button_dark_filled_style()
     style.padX = 5
     style.padY = 0
     style.highlightThickness = 1
@@ -117,7 +118,7 @@ def get_button_lite_style():
     return style
 
 def get_button_solve_me_style():
-    style = button.get_button_style_2()
+    style = button.get_button_dark_filled_style()
     style.padX = 5
     style.padY = 0
     style.highlightThickness = 1
@@ -131,7 +132,7 @@ def get_button_solve_me_style():
 
 
 def get_button_next_level_style():
-    style = button.get_button_style_2()
+    style = button.get_button_dark_filled_style()
     style.padX = 5
     style.padY = 0
     style.highlightThickness = 1

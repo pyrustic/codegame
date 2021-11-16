@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter.scrolledtext import ScrolledText
 
 import codeval
-from cyberpunk_theme.widget.button import get_button_style_4, get_button_style_9
+from cyberpunk_theme.widget.button import get_button_blue_filled_style, get_button_red_style
 from viewable import Viewable
 from codegame.game.testing import eval_user_code
 from megawidget.toast import Toast
@@ -45,12 +45,12 @@ class Editor(Viewable):
         button_clear = tk.Button(frame, text="Clear",
                                  command=self._on_click_clear)
         button_clear.pack(side=tk.LEFT)
-        get_button_style_9().target(button_clear)
+        get_button_red_style().target(button_clear)
         # button submit
         button_submit = tk.Button(frame, text="Submit",
                                   command=self._on_click_submit)
         button_submit.pack(side=tk.RIGHT, padx=(0, 2))
-        get_button_style_4().target(button_submit)
+        get_button_blue_filled_style().target(button_submit)
         # button paste
         button_paste = tk.Button(frame, text="Paste",
                                  command=self._on_click_paste)

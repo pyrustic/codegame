@@ -4,7 +4,7 @@ from megawidget.toast import Toast
 from codegame.misc import funcs
 from codegame.misc.theme import get_entry_description_style, \
     get_info_entry_owner_repo_style, get_package_size_style
-from cyberpunk_theme.widget.button import get_button_style_4, get_button_style_9
+from cyberpunk_theme.widget.button import get_button_blue_filled_style, get_button_red_style
 
 
 class Installer(Viewable):
@@ -154,7 +154,7 @@ class Installer(Viewable):
         button_install = tk.Button(frame, text="Install",
                                    command=self._on_click_install)
         button_install.pack(side=tk.RIGHT, padx=(3, 0))
-        get_button_style_4().target(button_install)
+        get_button_blue_filled_style().target(button_install)
         # button cancel
         button_cancel = tk.Button(frame, text="Cancel",
                                   command=self.destroy)

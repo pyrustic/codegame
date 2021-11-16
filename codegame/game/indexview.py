@@ -1,7 +1,7 @@
 import tkinter as tk
 from viewable import Viewable
-from megawidget.scrollbox import Scrollbox
-from cyberpunk_theme.widget.button import get_button_style_3, get_button_style_4
+from megawidget.scrollbox import ScrollBox
+from cyberpunk_theme.widget.button import get_button_blue_style, get_button_blue_filled_style
 
 
 class IndexView(Viewable):
@@ -29,7 +29,7 @@ class IndexView(Viewable):
         self._body.title("Codegame Index")
         self._body.resizable(False, False)
         #self._body.overrideredirect(1)
-        self._scrollbox = Scrollbox(self._body)
+        self._scrollbox = ScrollBox(self._body)
         self._scrollbox.pack(expand=1, fill=tk.BOTH)
         # install central
         self._install_central()
@@ -68,7 +68,7 @@ class IndexView(Viewable):
         button = tk.Button(frame, text="Open",
                            command=command)
         button.pack(side=tk.LEFT, padx=(5, 0))
-        get_button_style_3().target(button)
+        get_button_blue_style().target(button)
 
     def _install_footer(self):
         frame = tk.Frame(self._body)
